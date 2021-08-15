@@ -1,0 +1,37 @@
+.btn {
+  appearance: none;
+  border: 0;
+  background-color: var(--primary-color-light);
+  padding: 0.7rem 3rem;
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  outline: none;
+  box-shadow: 0 0 0 1px transparent;
+  font-weight: 600;
+}
+
+.btn:hover,
+[open] > .btn {
+  background-color: var(--primary-color-main);
+}
+
+.btn:focus,
+[open] > .btn {
+  box-shadow: 0 0 0 1px;
+}
+
+.btn:active,
+.btn[aria-selected='true'] {
+  background-color: var(--color-btn-primary-selected-bg);
+}
+
+.btn:disabled,
+.btn[aria-disabled='true'] {
+  background-color: var(--primary-background-dark);
+  cursor: default;
+}
+.rounded {
+  border-radius: 100rem;
+}
