@@ -3,9 +3,9 @@
   --primary-color-main: #ffad9d;
   --primary-color-dark: #fc9681;
 
-  --secondary-color-light: #e1b5b2;
-  --secondary-color-main: #8a6c86;
-  --secondary-color-dark: #413b55;
+  --secondary-color-light: #8a6c86;
+  --secondary-color-main: #452473;
+  --secondary-color-dark: #32125e;
 
   --text-color: #0f0625;
 
@@ -32,6 +32,11 @@ input,
 select,
 textarea {
   font: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
 }
 
 a {
