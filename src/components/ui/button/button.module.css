@@ -1,8 +1,7 @@
 .btn {
   appearance: none;
   border: 0;
-  background-color: var(--primary-color-light);
-  padding: 0.7rem 3rem;
+  padding: 0.7rem 2rem;
   display: inline-block;
   cursor: pointer;
   user-select: none;
@@ -10,9 +9,48 @@
   outline: none;
   box-shadow: 0 0 0 1px transparent;
   font-weight: 600;
+  min-width: 4rem;
+  color: currentColor;
 }
 
-.btn:hover,
+.btn svg {
+  max-width: 20px;
+}
+
+/* .contained {
+  color: currentColor;
+} */
+
+.leftMargin {
+  margin-left: 0.5rem;
+}
+.rightMargin {
+  margin-right: 0.5rem;
+}
+
+.primary {
+  background-color: var(--primary-color-light);
+}
+.secondary {
+  background-color: var(--secondary-color-dark);
+}
+.error {
+  background-color: var(--error-color-main);
+}
+.success {
+  background-color: var(--success-color-main);
+}
+.warnign {
+  background-color: var(--warnign-color-main);
+}
+.transparent {
+  background-color: transparent;
+}
+
+.rounded {
+  border-radius: 100rem;
+}
+/* .btn:hover,
 [open] > .btn {
   background-color: var(--primary-color-main);
 }
@@ -32,6 +70,4 @@
   background-color: var(--primary-background-dark);
   cursor: default;
 }
-.rounded {
-  border-radius: 100rem;
-}
+ */
