@@ -1,17 +1,29 @@
 import { Layout } from '@components/core';
-import { Button, Input } from '@components/ui';
+import {
+  About,
+  BookCarousel,
+  BookList,
+  Category,
+  Plans,
+  SmartPhone,
+  Testimonials
+} from '@components/section';
 import type { NextPage } from 'next';
-import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
   return (
     <Layout>
-      <h1>Hello</h1>
-      <h1>Hello</h1>
-      <h1>Hello</h1>
-      <h1>Hello</h1>
-      <h1>Hello</h1>
-      <h1>Hello</h1>
+      <div>
+        <About />
+        <BookCarousel />
+      </div>
+      <div>
+        <Category />
+      </div>
+      <BookList />
+      <Plans />
+      <Testimonials />
+      <SmartPhone />
     </Layout>
   );
 };
