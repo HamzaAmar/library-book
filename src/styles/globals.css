@@ -7,11 +7,15 @@
   --secondary-color-main: #452473;
   --secondary-color-dark: #32125e;
 
+  --text-color-light: #535353;
+  --text-color-main: #333;
   --text-color: #0f0625;
 
   --primary-background-light: #ffffff;
   --primary-background-main: #f1eef6;
   --primary-background-dark: #b5b7c8;
+
+  --border-radius: 0.5rem;
 }
 
 *,
@@ -24,8 +28,25 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.8;
+  color: var(--text-color);
+}
+
+div,
+p {
+  padding: 0;
+  margin: 0;
 }
 button,
 input,
