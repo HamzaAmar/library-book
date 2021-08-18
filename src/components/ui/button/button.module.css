@@ -1,16 +1,18 @@
 .btn {
   appearance: none;
   border: 0;
-  padding: 0.7rem 2rem;
-  display: inline-block;
   cursor: pointer;
   user-select: none;
   white-space: nowrap;
   outline: none;
   box-shadow: 0 0 0 1px transparent;
-  font-weight: 600;
-  min-width: 4rem;
+  min-width: 3rem;
   color: currentColor;
+  text-align: center;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn svg {
@@ -28,11 +30,30 @@
   margin-right: 0.5rem;
 }
 
+.icon {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.185);
+}
+
+.small {
+  padding: 0.25rem 0.75rem;
+}
+
+.medium {
+  padding: 0.5rem 1.5rem;
+}
+
+.medium {
+  padding: 1rem 3rem;
+}
+
 .primary {
   background-color: var(--primary-color-light);
 }
 .secondary {
   background-color: var(--secondary-color-dark);
+  color: white;
 }
 .error {
   background-color: var(--error-color-main);
@@ -46,9 +67,20 @@
 .transparent {
   background-color: transparent;
 }
+.white {
+  background-color: white;
+}
+
+.none {
+  border-radius: 0;
+}
 
 .rounded {
   border-radius: 100rem;
+}
+
+.full {
+  border-radius: 50%;
 }
 /* .btn:hover,
 [open] > .btn {

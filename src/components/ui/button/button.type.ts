@@ -2,20 +2,24 @@ import React from 'react';
 import { ButtonHTMLAttributes } from 'react';
 
 type Position = 'start' | 'end';
-type Variant = 'contained' | 'outline' | 'text';
+type Variant = 'contained' | 'outline' | 'text' | 'icon';
 type Color =
   | 'primary'
   | 'secondary'
   | 'success'
   | 'warning'
   | 'error'
-  | 'transparent';
+  | 'transparent'
+  | 'white';
+type Radius = 'none' | 'rounded' | 'full';
+type Size = 'small' | 'medium' | 'large';
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
-  rounded?: boolean;
+  radius?: Radius;
   icon?: React.ReactNode;
   iconPosition?: Position;
   variant: Variant;
-  color: Color;
+  color?: Color;
+  size?: Size;
 }
