@@ -18,13 +18,17 @@ const header = () => {
         </ul>
       </div>
       <div className={styles.rightHeader}>
-        <div>
-          <Bag width="25" />
-        </div>
-        <Button rounded color="transparent">
-          Sign In
+        <Button
+          style={{ position: 'relative' }}
+          radius="full"
+          variant="icon"
+          color="transparent"
+        >
+          <div className={styles.badge}>01</div>
+          <Bag width="15" />
         </Button>
-        <Button rounded color="secondary">
+        <Button color="transparent">Sign In</Button>
+        <Button radius="rounded" size="medium" color="secondary">
           Create Account
         </Button>
       </div>

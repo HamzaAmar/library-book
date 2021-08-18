@@ -1,7 +1,8 @@
 .header {
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));
-  font-size: 0.9rem;
+  font-size: 0.85rem;
+  height: 6rem;
 }
 
 /* Left Side Content section css */
@@ -13,10 +14,11 @@
   align-items: center;
   justify-content: space-evenly;
   padding: 0 4em;
-  padding-left: 10em;
+  padding-left: 10vw;
 }
 .logo {
   flex: 1 0;
+  font-weight: 500;
 }
 .list {
   display: flex;
@@ -35,9 +37,26 @@
   background-color: var(--secondary-color-main);
   grid-column: 5 / 8;
   padding: 0 4em;
-  padding-right: 10em;
+  padding-right: 10vw;
   display: flex;
   align-items: center;
   justify-content: space-around;
   color: white;
+}
+
+.badge {
+  border-radius: 50%;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: var(--primary-color-light);
+  position: absolute;
+  top: 0;
+  left: 100%;
+  font-size: 0.7rem;
+  color: black;
+  padding: 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -20%);
 }
