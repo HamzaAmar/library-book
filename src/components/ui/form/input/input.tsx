@@ -3,6 +3,7 @@ import { InputProps } from './input.type';
 import cn from 'classnames';
 import styles from './input.module.css';
 const input = ({ sizeVariant, full, ...rest }: InputProps) => {
+  console.log(rest);
   const root = cn(styles, {
     [styles.medium]: sizeVariant === 'medium',
     [styles.full]: full

@@ -1,4 +1,6 @@
 .input {
+  padding: 1rem 0;
+  background-color: red;
 }
 .full {
   width: 100%;
